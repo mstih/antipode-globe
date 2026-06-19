@@ -1,16 +1,32 @@
-# React + Vite
+# 🌍 Antipode Globe Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, interactive 3D globe web application built to find the exact opposite point (antipode) of any location on Earth. Click anywhere on the globe, and see the antipode point.
 
-Currently, two official plugins are available:
+![Project Screenshot](./screenshot.webp)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
 
-## React Compiler
+- **Framework:** React (Vite)
+- **Styling:** Tailwind CSS
+- **Mapping Engine:** MapLibre GL JS
+- **Map Tiles:** Stadia Maps
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+1. **Clone the repository:**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```bash
+   git clone https://github.com/mstih/antipode-globe.git
+
+   cd antipode-globe
+   ```
+
+2. **Install dependencies:**
+   ```
+   npm install
+   ```
+3. **Run it:**
+   ```
+   npm run dev
+   ```
+4. **Open `http://localhost:5173` in your browser and try it out.**
