@@ -8,8 +8,8 @@ A sleek, interactive 3D globe web application built to find the exact opposite p
 
 - **Framework:** React (Vite)
 - **Styling:** Tailwind CSS
-- **Mapping Engine:** MapLibre GL JS
-- **Map Tiles:** Stadia Maps
+- **Mapping Engine:** [MapLibre GL JS](https://maplibre.org)
+- **Map Tiles:** [Carto](https://carto.com/basemaps/)
 
 ## 🚀 Getting Started
 
