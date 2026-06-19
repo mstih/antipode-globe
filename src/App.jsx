@@ -13,8 +13,8 @@ function App() {
   const [theme, setTheme] = useState('light');
 
   // Map styles
-  const darkMap = 'https://tiles.stadiamaps.com/styles/alidade_smooth_dark.json'
-  const lightMap = 'https://tiles.stadiamaps.com/styles/alidade_smooth.json'
+  const darkMap = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'
+  const lightMap = 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json'
 
   useEffect(() => {
     // initialize map
@@ -149,7 +149,20 @@ function App() {
         )}
       </div>
       {/* Map element */}
-      <div ref={mapContainerRef} className='absolute top-0 bottom-0 w-full h-full' />
+      <div className={`absolute inset-0 flex items-center justify-center transition-colors duration-500
+        ${theme === 'dark' ? 'bg-[#030712]' : 'bg-[#e2e8f0]'}`}
+      >
+        {theme === 'dark' && (
+          <div className="absolute w-[68vh] h-[68vh] rounded-full bg-indigo-500/20 blur-3xl pointer-events-none animate-pulse duration-6000" />
+        )}
+        {theme === 'light' && (
+          <div className="absolute w-[66vh] h-[66vh] rounded-full bg-slate-950/30 blur-2xl translate-y-3 pointer-events-none" />
+        )}
+        <div
+          ref={mapContainerRef}
+          className="absolute top-0 bottom-0 w-full h-full mix-blend-normal"
+        />
+      </div>
     </div>
   )
 }
